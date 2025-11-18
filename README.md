@@ -66,7 +66,7 @@ Future updates will include real-world SQL projects providing hands-on experienc
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/SQL-Playground.git
+   git clone https://github.com/darshan-p-2508/SQL-Playground.git
 2. Open any .sql file in your preferred MySQL client or environment.
 3. Run queries, explore examples, and modify scripts to experiment with concepts.
 
