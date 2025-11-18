@@ -47,12 +47,12 @@ Future updates will include real-world SQL projects providing hands-on experienc
 
 ## 📂 Repository Structure
 
-📦 sql-playground
- ┣ 📁 basics
- ┣ 📁 intermediate
- ┣ 📁 advanced
- ┣ 📁 projects
- ┗ 📄 README.md
+📦 sql-playground<br>
+ ┣ 📁 basics<br>
+ ┣ 📁 intermediate<br>
+ ┣ 📁 advanced<br>
+ ┣ 📁 projects<br>
+ ┗ 📄 README.md<br>
 
 ---
 
