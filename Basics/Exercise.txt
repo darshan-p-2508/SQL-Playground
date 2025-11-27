@@ -1,0 +1,172 @@
+✅ Sample SQL Exercises (Basics → Intermediate)
+1. Create Tables & Insert Data
+Exercise 1 — Create a Customers Table
+
+Create a table named customers with the following columns:
+
+Column	Type	Requirements
+id	INT	Primary Key
+name	VARCHAR(100)	NOT NULL
+email	VARCHAR(150)	UNIQUE
+signup_date	DATE	NOT NULL
+
+Tasks
+
+Create the table.
+
+Insert 5 customers.
+
+Select all customers ordered by signup date.
+
+2. Filtering & Sorting
+Exercise 2 — Basic SELECT Queries
+
+Use the customers table.
+
+Tasks
+
+Select customers whose name starts with 'A'.
+
+Select emails that contain “gmail”.
+
+Select customers who signed up in 2023.
+
+Return all customers sorted by name ASC and then by signup_date DESC.
+
+3. Aggregations
+Exercise 3 — Movie Ratings
+
+Create a table ratings:
+
+column	type
+user_id	INT
+movie	VARCHAR(100)
+rating	INT (1–5)
+
+Insert 10 sample rows.
+
+Tasks
+
+Show the average rating of each movie.
+
+Show the number of ratings per movie (highest to lowest).
+
+Show all movies with an average rating > 4.0.
+
+4. JOIN Basics
+Exercise 4 — Customers & Orders
+
+Create an orders table:
+
+column	type
+order_id	INT PRIMARY KEY
+customer_id	INT
+amount	DECIMAL(10,2)
+order_date	DATE
+
+Insert 8 sample orders.
+
+Tasks
+
+Join customers with their orders.
+
+Show each customer and the total amount they’ve spent.
+
+Return customers with no orders.
+
+Show the top 3 customers by spending.
+
+5. JOIN With Multiple Tables
+Exercise 5 — E-commerce Schema
+
+Create:
+
+products
+(product_id, name, price)
+
+order_items
+(order_id, product_id, quantity)
+
+Tasks
+
+Return each order with product names and total line cost (price * quantity).
+
+Return the top 5 best-selling products.
+
+Return revenue per product category (if categories exist).
+
+Find customers who ordered a product priced above 100.
+
+6. Subqueries
+Exercise 6 — Subquery Practice
+
+Using the orders and customers tables:
+
+Tasks
+
+Find customers whose total spending is above the average spending.
+
+Show orders larger than the average order amount.
+
+Return customers who made at least one order with amount > 500.
+
+7. Window Functions (Intermediate)
+Exercise 7 — Ranking Orders
+
+Use the orders table.
+
+Tasks
+
+Rank all orders by amount (highest → lowest).
+
+For each customer, calculate running total of spending.
+
+Show percent rank of each order based on amount.
+
+8. CTEs (Common Table Expressions)
+Exercise 8 — Reusable Subqueries
+
+Tasks
+
+Use a CTE to compute total spending per customer.
+Then select only those above 1000.
+
+Use a CTE to list movies with average rating < 3 and delete them (if DB supports DELETE with CTE).
+
+9. Data Modification
+Exercise 9 — Updates & Deletes
+
+Tasks
+
+Update all product prices by increasing them by 10%.
+
+Delete customers with no orders in the last 2 years.
+
+Update an order’s amount based on recalculated items.
+
+10. Schema Design Challenge
+Exercise 10 — Design a Blogging Database
+
+Create tables for:
+
+users
+
+posts
+
+comments
+
+likes
+
+Tasks
+
+Design reasonable column types + constraints.
+
+Write queries:
+
+number of posts per user
+
+top 3 users by comments received
+
+posts with no comments
+
+most liked post
